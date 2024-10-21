@@ -25,6 +25,10 @@ var array = arrayOf<Int>(1,2,3,4,5
 
     //Read only list (I can not add, update , delete)
 
-    val readList= listOf<String>("Juan")
+    val readList= listOf<String>("Juan","Martin Jose","Martin")
     readList.forEach { i -> println(i) }
+    println("----")
+    println(readList.count())
+  //  readList.forEach{i->println(i.length)}
+    println("Martin" in readList) //if "Martin" is in the list , it throws true
 }
