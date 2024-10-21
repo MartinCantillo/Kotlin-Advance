@@ -14,12 +14,17 @@ var array = arrayOf<Int>(1,2,3,4,5
     array.forEach { i: Int -> println(i) }
 
     //Lists
-    //non mutable list (only read)
+    // mutable list (only read)
 
     val nameList= mutableListOf<String>()
+    // val nameList: MutableList<String> = mutableListOf()
     nameList.add("Martin")
     nameList.add("Camilo")
+   // nameList.remove("Martin")
     nameList.forEach { i -> println(i) }
 
+    //Read only list (I can not add, update , delete)
 
+    val readList= listOf<String>("Juan")
+    readList.forEach { i -> println(i) }
 }
