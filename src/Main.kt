@@ -31,4 +31,18 @@ var array = arrayOf<Int>(1,2,3,4,5
     println(readList.count())
   //  readList.forEach{i->println(i.length)}
     println("Martin" in readList) //if "Martin" is in the list , it throws true
+
+
+    //Sets . unique value
+    println("Sets")
+    val nameSets= mutableSetOf<String>("Juan","Martin Jose","Martin Jose")
+    nameSets.add("Camilo")
+    nameSets.forEach { i -> println(i) }
+    println("there are ${nameSets.count()} items")
+
+    val name2Sets= setOf<Int>(4,6,8,10,10)
+
+    for (i:Int in name2Sets) {
+        println(i)
+    }
 }
